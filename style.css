@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'tesla';
+    src: url('fontes/TESLA.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"caviarDreams" ;
+    src: url("fontes/CaviarDreams_Bold.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    /* tirando as formatações automaticas do HTML */
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    /* Cores utilizadas no site */
+    --cor1: #00010d;
+    --cor2: #474f59;
+    --cor3: #9fa2a6;
+    --cor4: #f2eeeb;
+    --cor5: #d9d5d2;
+
+    /* Fontes utilizadas no site */
+    --font-padrao: arial, Verdana, Helvetica, Sans-serif;
+    --font-destaque: 'Roboto', sans-serif;
+    --font-tesla: 'tesla', 'cursive';
+    --font-video:'caviarDreams';
+}
+
+body {
+
+    font-family: var(--font-padrao);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+}
+
+header {
+
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    padding: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.333);
+}
+
+header h1 {
+
+    text-align: center;
+    font-family: var(--font-tesla);
+    font-size: 3em;
+}
+
+header p {
+    font-family: var(--font-destaque);
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    color: var(--cor2);
+
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.34);
+    background-color: var(--cor4);
+
+}
+
+main h1 {
+
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+}
+
+main h2 {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+
+main p {
+
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.3em;
+}
+
+main img {
+
+    width: 100%;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.235);
+    
+}
+
+.h2video{
+    font-family: var(--font-video);
+    background-color:black;
+    color: white;
+    padding: 10px;
+    
+}
+
+div.video{
+    background-color: var(--cor2);
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 40%;
+    position: relative;
+    
+}
+
+div.video > iframe{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+footer {
+
+    background-color: var(--cor2);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: black;
+}
